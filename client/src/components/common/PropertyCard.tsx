@@ -19,7 +19,8 @@ const PropertyCard = ({ id, location, photo, price, title }: PropertyCardProps) 
                     transform: "translateY(-3px)"
                 },
                 cursor: 'pointer',
-                borderRadius: '10px' 
+                borderRadius: '10px',
+                bgcolor: '#ededed' 
             }}
             elevation={3}
         >
