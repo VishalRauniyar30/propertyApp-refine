@@ -55,7 +55,7 @@ function App() {
             //save user to mongoDB
 
             if(profileObj) {
-                const response = await fetch('https://property-app-refine.vercel.app/api/v1/users', {
+                const response = await fetch('http://localhost:8080/api/v1/users', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -153,7 +153,7 @@ function App() {
                     <RefineSnackbarProvider>
                         <DevtoolsProvider>
                             <Refine
-                                dataProvider={dataProvider("https://property-app-refine.vercel.app/api/v1")}
+                                dataProvider={dataProvider("http://localhost:8080/api/v1")}
                                 notificationProvider={useNotificationProvider}
                                 routerProvider={routerBindings}
                                 authProvider={authProvider}
