@@ -153,7 +153,7 @@ function App() {
                     <RefineSnackbarProvider>
                         <DevtoolsProvider>
                             <Refine
-                                dataProvider={dataProvider("http://localhost:8080/api/v1")}
+                                dataProvider={dataProvider("https://property-app-refine.vercel.app/api/v1")}
                                 notificationProvider={useNotificationProvider}
                                 routerProvider={routerBindings}
                                 authProvider={authProvider}
