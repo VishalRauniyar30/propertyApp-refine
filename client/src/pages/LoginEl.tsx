@@ -6,7 +6,7 @@ import Container from "@mui/material/Container"
 import { yariga } from "../assets"
 import type { CredentialResponse } from "../interfaces/google"
 
-const GOOGLE_CLIENT_ID = import.meta.env.REFINE_GOOGLE_ID
+const GOOGLE_CLIENT_ID = '454861779123-m9tbi3sl84geo48edddvj04dlg6p6lat.apps.googleusercontent.com'
 
 export const LoginEl: React.FC = () => {
     const { mutate: login } = useLogin<CredentialResponse>()
