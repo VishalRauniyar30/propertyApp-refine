@@ -11,9 +11,12 @@ dotenv.config()
 const app = express()
 
 app.use(cors({
-    origin: '*',
+    origin: "https://property-app-refine-dashboard.vercel.app",  // Allow only your frontend
+    methods: "GET, POST, PUT, DELETE, OPTIONS",
+    allowedHeaders: "Content-Type, Authorization",
     credentials: true
 }))
+
 app.use(express.json({ limit: '50mb' }))
 
 app.get('/', (_, res) => {
